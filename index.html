@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Alternate-Life RageMP.NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Alternate-Life RageMP.NET ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <script src="/cdn-cgi/apps/head/8Kx_8NNnBmLMqik7B00O9TRhyf0.js"></script><link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="logo" src="logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="alternate-life-ragempnet">Alternate-Life RageMP.NET</h1>
+
+<p>This is the documentation for the Alternate-Life RageMP server bridge to add proper .NET Core support.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To get started with AlternateLife.RageMP.Net, <a href="documentation/installation.html">look into our guide</a> on how to create your first serverside resource.</p>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li><strong>Why should I prefer AlternateLife.RageMP.Net instead of the official RAGE Multiplayer C# bridge?</strong>
+<ul>
+<li><em>This library represents the native JavaScript RAGE Multiplayer server API as close as possible.</em></li>
+<li><em>Furthermore, this library has improved error and exception handling, so exceptions thrown inside a resource should be caught and logged correctly to prevent crashes.</em></li>
+<li><em>Thread-safety is handled by this library, so you do not have to worry about wrong thread calls or crashes due to race-conditions.</em></li>
+<li><em>This libary is developed with the <a href="https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap">task-based asynchronous pattern (TAP)</a> in mind to achieve thread-safety.</em></li>
+</ul>
+</li>
+<li><strong>Is there a way to drop pure <code>.cs</code> files inside a resource folder and let the server compile it?</strong>
+<ul>
+<li><em>No, you have to compile all projects into assemblies (<code>.dll</code>), other ways are not supported.</em></li>
+</ul>
+</li>
+<li><strong>Does this library offer a command handler to create simple commands?</strong>
+<ul>
+<li><em>Yes, but in a very basic way. There are two ways to create commands: First, with command-handlers and attributes which define commands and a very simple MP.Commands.Add() method that uses a lambda function as handler.</em></li>
+</ul>
+</li>
+<li><strong>I want to create multiple main-classes which are activated by the server, is that even possible?</strong>
+<ul>
+<li><em>No, the server looks for the first type that implements the <a href="api/AlternateLife.RageMP.Net.Scripting.IResource.html">IResource</a> interface and activates it. You have to manage different types yourself.</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="mit-license">MIT License</h2>
+<p>Copyright (c) 2018 Alternate-Life</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

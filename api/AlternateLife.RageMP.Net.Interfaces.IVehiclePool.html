@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IVehiclePool
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IVehiclePool
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <script src="/cdn-cgi/apps/head/8Kx_8NNnBmLMqik7B00O9TRhyf0.js"></script><link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="logo" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool">
+  
+  
+  <h1 id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool" class="text-break">Interface IVehiclePool
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IPool-1.html#AlternateLife_RageMP_Net_Interfaces_IPool_1_Item_System_UInt32_">IPool&lt;IVehicle&gt;.Item[UInt32]</a>
+    </div>
+    <div>
+      <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IPool-1.html#AlternateLife_RageMP_Net_Interfaces_IPool_1_GetAt_System_Int32_">IPool&lt;IVehicle&gt;.GetAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IPool-1.html#AlternateLife_RageMP_Net_Interfaces_IPool_1_GetAt_System_UInt32_">IPool&lt;IVehicle&gt;.GetAt(UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IPool-1.html#AlternateLife_RageMP_Net_Interfaces_IPool_1_GetInRangeAsync_Vector3_System_Single_System_UInt32_">IPool&lt;IVehicle&gt;.GetInRangeAsync(Vector3, Single, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IPool-1.html#AlternateLife_RageMP_Net_Interfaces_IPool_1_GetInDimensionAsync_System_UInt32_">IPool&lt;IVehicle&gt;.GetInDimensionAsync(UInt32)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.html">AlternateLife.RageMP.Net.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: AlternateLife.RageMP.Net.dll</h6>
+  <h5 id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVehiclePool : IPool&lt;IVehicle&gt;, IReadOnlyList&lt;IVehicle&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_AlternateLife_RageMP_Net_Enums_VehicleHash_Vector3_System_Single_System_String_System_UInt32_System_Boolean_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(AlternateLife.RageMP.Net.Enums.VehicleHash%2CVector3%2CSystem.Single%2CSystem.String%2CSystem.UInt32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IVehiclePool.cs/#L24">View Source</a>
+  </span>
+  <a id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync*"></a>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_AlternateLife_RageMP_Net_Enums_VehicleHash_Vector3_System_Single_System_String_System_UInt32_System_Boolean_System_Boolean_System_UInt32_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(AlternateLife.RageMP.Net.Enums.VehicleHash,Vector3,System.Single,System.String,System.UInt32,System.Boolean,System.Boolean,System.UInt32)">NewAsync(VehicleHash, Vector3, Single, String, UInt32, Boolean, Boolean, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Create a new vehicle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IVehicle&gt; NewAsync(VehicleHash model, Vector3 position, float heading = null, string numberPlate = &quot;&quot;, uint alpha = null, bool locked = false, bool engine = false, uint dimension = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Enums.VehicleHash.html">VehicleHash</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>Model of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">heading</span></td>
+        <td><p>Heading of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">numberPlate</span></td>
+        <td><p>Number plate of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">alpha</span></td>
+        <td><p>Alpha of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">locked</span></td>
+        <td><p>Locked state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">engine</span></td>
+        <td><p>Engine state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td><p>Dimension of the vehicle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a>&gt;</td>
+        <td><p>New <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_System_Int32_Vector3_System_Single_System_String_System_Int32_System_Boolean_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(System.Int32%2CVector3%2CSystem.Single%2CSystem.String%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IVehiclePool.cs/#L56">View Source</a>
+  </span>
+  <a id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync*"></a>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_System_Int32_Vector3_System_Single_System_String_System_Int32_System_Boolean_System_Boolean_System_UInt32_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(System.Int32,Vector3,System.Single,System.String,System.Int32,System.Boolean,System.Boolean,System.UInt32)">NewAsync(Int32, Vector3, Single, String, Int32, Boolean, Boolean, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Create a new vehicle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IVehicle&gt; NewAsync(int model, Vector3 position, float heading = null, string numberPlate = &quot;&quot;, int alpha = 255, bool locked = false, bool engine = false, uint dimension = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>Model of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">heading</span></td>
+        <td><p>Heading of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">numberPlate</span></td>
+        <td><p>Number plate of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">alpha</span></td>
+        <td><p>Alpha of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">locked</span></td>
+        <td><p>Locked state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">engine</span></td>
+        <td><p>Engine state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td><p>Dimension of the vehicle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a>&gt;</td>
+        <td><p>New <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_System_UInt32_Vector3_System_Single_System_String_System_UInt32_System_Boolean_System_Boolean_System_UInt32_.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(System.UInt32%2CVector3%2CSystem.Single%2CSystem.String%2CSystem.UInt32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IVehiclePool.cs/#L40">View Source</a>
+  </span>
+  <a id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync*"></a>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IVehiclePool_NewAsync_System_UInt32_Vector3_System_Single_System_String_System_UInt32_System_Boolean_System_Boolean_System_UInt32_" data-uid="AlternateLife.RageMP.Net.Interfaces.IVehiclePool.NewAsync(System.UInt32,Vector3,System.Single,System.String,System.UInt32,System.Boolean,System.Boolean,System.UInt32)">NewAsync(UInt32, Vector3, Single, String, UInt32, Boolean, Boolean, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Create a new vehicle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IVehicle&gt; NewAsync(uint model, Vector3 position, float heading = null, string numberPlate = &quot;&quot;, uint alpha = null, bool locked = false, bool engine = false, uint dimension = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>Model of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Position of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">heading</span></td>
+        <td><p>Heading of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">numberPlate</span></td>
+        <td><p>Number plate of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">alpha</span></td>
+        <td><p>Alpha of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">locked</span></td>
+        <td><p>Locked state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">engine</span></td>
+        <td><p>Engine state of the vehicle</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td><p>Dimension of the vehicle</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a>&gt;</td>
+        <td><p>New <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.IVehicle.html">IVehicle</a> instance</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

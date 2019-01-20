@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IEventScripting
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IEventScripting
+   ">
+    <meta name="generator" content="docfx 2.40.4.0">
+    
+    <script src="/cdn-cgi/apps/head/8Kx_8NNnBmLMqik7B00O9TRhyf0.js"></script><link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="logo" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting">
+  
+  
+  <h1 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting" class="text-break">Interface IEventScripting
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AlternateLife.RageMP.Net.Interfaces.html">AlternateLife.RageMP.Net.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: AlternateLife.RageMP.Net.dll</h6>
+  <h5 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IEventScripting</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_Add_System_String_AlternateLife_RageMP_Net_Scripting_PlayerRemoteEventDelegate_.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.Add(System.String%2CAlternateLife.RageMP.Net.Scripting.PlayerRemoteEventDelegate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L46">View Source</a>
+  </span>
+  <a id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_Add_" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.Add*"></a>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_Add_System_String_AlternateLife_RageMP_Net_Scripting_PlayerRemoteEventDelegate_" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.Add(System.String,AlternateLife.RageMP.Net.Scripting.PlayerRemoteEventDelegate)">Add(String, PlayerRemoteEventDelegate)</h4>
+  <div class="markdown level1 summary"><p>Add a client event callback.</p>
+<p>The <code data-dev-comment-type="paramref" class="paramref">callback</code> is called when a player sends a client event with the given <code data-dev-comment-type="paramref" class="paramref">eventName</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Add(string eventName, PlayerRemoteEventDelegate callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td><p>Name of the event</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerRemoteEventDelegate.html">PlayerRemoteEventDelegate</a></td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Callback to execute on the event</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerChat.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerChat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L14">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerChat" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerChat">PlayerChat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerChatDelegate PlayerChat</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerChatDelegate.html">PlayerChatDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerCommand.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L13">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerCommand" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerCommand">PlayerCommand</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerCommandDelegate PlayerCommand</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerCommandDelegate.html">PlayerCommandDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerCreateWaypoint.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerCreateWaypoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L26">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerCreateWaypoint" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerCreateWaypoint">PlayerCreateWaypoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerCreateWaypointDelegate PlayerCreateWaypoint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerCreateWaypointDelegate.html">PlayerCreateWaypointDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerDamage.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L16">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerDamage" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerDamage">PlayerDamage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerDamageDelegate PlayerDamage</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerDamageDelegate.html">PlayerDamageDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerDeath.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerDeath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L11">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerDeath" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerDeath">PlayerDeath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerDeathDelegate PlayerDeath</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerDeathDelegate.html">PlayerDeathDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterCheckpoint.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterCheckpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L22">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterCheckpoint" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterCheckpoint">PlayerEnterCheckpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerEnterCheckpointDelegate PlayerEnterCheckpoint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerEnterCheckpointDelegate.html">PlayerEnterCheckpointDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterColshape.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterColshape%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L24">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterColshape" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterColshape">PlayerEnterColshape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerEnterColshapeDelegate PlayerEnterColshape</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerEnterColshapeDelegate.html">PlayerEnterColshapeDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterVehicle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterVehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L19">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerEnterVehicle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerEnterVehicle">PlayerEnterVehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerEnterVehicleDelegate PlayerEnterVehicle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerEnterVehicleDelegate.html">PlayerEnterVehicleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitCheckpoint.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitCheckpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L23">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitCheckpoint" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitCheckpoint">PlayerExitCheckpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerExitCheckpointDelegate PlayerExitCheckpoint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerExitCheckpointDelegate.html">PlayerExitCheckpointDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitColshape.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitColshape%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L25">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitColshape" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitColshape">PlayerExitColshape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerExitColshapeDelegate PlayerExitColshape</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerExitColshapeDelegate.html">PlayerExitColshapeDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitVehicle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitVehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L21">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerExitVehicle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerExitVehicle">PlayerExitVehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerExitVehicleDelegate PlayerExitVehicle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerExitVehicleDelegate.html">PlayerExitVehicleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerJoin.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerJoin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L9">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerJoin" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerJoin">PlayerJoin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerJoinDelegate PlayerJoin</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerJoinDelegate.html">PlayerJoinDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerQuit.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerQuit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L12">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerQuit" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerQuit">PlayerQuit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerQuitDelegate PlayerQuit</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerQuitDelegate.html">PlayerQuitDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerReachWaypoint.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerReachWaypoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L27">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerReachWaypoint" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerReachWaypoint">PlayerReachWaypoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerReachWaypointDelegate PlayerReachWaypoint</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerReachWaypointDelegate.html">PlayerReachWaypointDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerReady.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L10">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerReady" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerReady">PlayerReady</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerReadyDelegate PlayerReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerReadyDelegate.html">PlayerReadyDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerSpawn.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerSpawn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L15">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerSpawn" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerSpawn">PlayerSpawn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerSpawnDelegate PlayerSpawn</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerSpawnDelegate.html">PlayerSpawnDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStartEnterVehicle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStartEnterVehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L18">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStartEnterVehicle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStartEnterVehicle">PlayerStartEnterVehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerStartEnterVehicleDelegate PlayerStartEnterVehicle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerStartEnterVehicleDelegate.html">PlayerStartEnterVehicleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStartExitVehicle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStartExitVehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L20">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStartExitVehicle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStartExitVehicle">PlayerStartExitVehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerStartExitVehicleDelegate PlayerStartExitVehicle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerStartExitVehicleDelegate.html">PlayerStartExitVehicleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStreamIn.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStreamIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L35">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStreamIn" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStreamIn">PlayerStreamIn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerStreamInDelegate PlayerStreamIn</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerStreamInDelegate.html">PlayerStreamInDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStreamOut.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStreamOut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L36">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerStreamOut" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerStreamOut">PlayerStreamOut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerStreamOutDelegate PlayerStreamOut</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerStreamOutDelegate.html">PlayerStreamOutDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerWeaponChange.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerWeaponChange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L17">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_PlayerWeaponChange" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.PlayerWeaponChange">PlayerWeaponChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event PlayerWeaponChangeDelegate PlayerWeaponChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.PlayerWeaponChangeDelegate.html">PlayerWeaponChangeDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_Tick.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L8">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_Tick" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.Tick">Tick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event TickDelegate Tick</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.TickDelegate.html">TickDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleDamage.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleDamage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L33">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleDamage" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleDamage">VehicleDamage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event VehicleDamageDelegate VehicleDamage</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.VehicleDamageDelegate.html">VehicleDamageDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleDeath.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleDeath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L29">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleDeath" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleDeath">VehicleDeath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event VehicleDeathDelegate VehicleDeath</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.VehicleDeathDelegate.html">VehicleDeathDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleHornToggle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleHornToggle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L31">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleHornToggle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleHornToggle">VehicleHornToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event VehicleHornToggleDelegate VehicleHornToggle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.VehicleHornToggleDelegate.html">VehicleHornToggleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleSirenToggle.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleSirenToggle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L30">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleSirenToggle" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleSirenToggle">VehicleSirenToggle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event VehicleSirenToggleDelegate VehicleSirenToggle</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.VehicleSirenToggleDelegate.html">VehicleSirenToggleDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AlternateLife/ragemp-dotnet-core-doc/new/master/apiSpec/new?filename=AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleTrailerAttached.md&amp;value=---%0Auid%3A%20AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleTrailerAttached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AlternateLife/RageMP.Net/blob/f1bc745d35586e0833ac8ae1c9c7c2c27b15b776/src/AlternateLife.RageMP.Net/Interfaces/IEventScripting.cs/#L32">View Source</a>
+  </span>
+  <h4 id="AlternateLife_RageMP_Net_Interfaces_IEventScripting_VehicleTrailerAttached" data-uid="AlternateLife.RageMP.Net.Interfaces.IEventScripting.VehicleTrailerAttached">VehicleTrailerAttached</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event VehicleTrailerAttachedDelegate VehicleTrailerAttached</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AlternateLife.RageMP.Net.Scripting.VehicleTrailerAttachedDelegate.html">VehicleTrailerAttachedDelegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

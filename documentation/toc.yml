@@ -8,3 +8,5 @@
     href: first-resource.md
 - name: Events
   href: events.md
+- name: Commands
+  href: commands.md

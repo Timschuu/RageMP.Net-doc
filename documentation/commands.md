@@ -19,7 +19,7 @@ MP.Commands.RegisterHandler(new CommandHandler());
 ## Delegate Commands
 
 You can also add single commands without the need of handlers.
-Those commands are restricted to the `IPlayer string[]` signature and do not support type parsing.
+Those commands are restricted to the `IPlayer player, string[] arguments` signature and do not support type parsing.
 
 ### Command Registration
 
@@ -37,7 +37,7 @@ The first parameter of a command must always be `IPlayer`, the player that issue
 - Strings
 - Enums
 
-Alternatively you can also use the `IPlayer string[]` signature within command handlers.
+Alternatively you can also use the `IPlayer player, string[] arguments` signature within command handlers.
 
 Since all commands will be executed asynchronously, the return type must be `Task`. 
 
@@ -66,7 +66,7 @@ More example commands can be found in the example resource.
 
 ## Error Handling
 
-Whenever a command is not found or type parsing fails, RageMP.Net allows you to define how to handle this situation. By subscribing to `MP.Commands.CommandError` you will be notified with an error message, reason and the player issuing the command.
+Whenever a command is not found or type parsing fails, RageMP.Net allows you to define how to handle this situation. By subscribing to `MP.Events.PlayerCommandFailed` you will be notified with an error message, reason, the players input and the player issuing the command.
 
 ## Removing Commands
 

@@ -5,31 +5,34 @@ There are multiple ways to register commands in RageMP.Net.
 
 ## Command Handlers
 
-Commands can be created in handler classes, implementing from [ICommandHandler](~/api/AlternateLife.RageMP.Net.Interfaces.ICommandHandler.yml).
-Within these classes you can declare methods and add the [Command](~/api/AlternateLife.RageMP.Net.Attributes.CommandAttribute.yml) attribute them to mark them as a command. The attribute will require you to give the command a name.
+Command Handlers are an easy way to register new commands. A command handler is a simple class that implements [ICommandHandler](~/api/AlternateLife.RageMP.Net.Interfaces.ICommandHandler.yml) and contains a collection of methods with the attribute [Command](~/api/AlternateLife.RageMP.Net.Attributes.CommandAttribute.yml). 
 
-### Handler Registration
+#### Registration
 
 You can register new command handlers by calling following method:
 
 ```cs
-MP.Commands.RegisterHandler(new CommandHandler());  
+public class Main implements IResource {
+
+    public Main() 
+    {
+        MP.Commands.RegisterHandler(new CommandHandler());  
+    }
+
+    public Task OnStartAsync()
+    {
+        return Task.CompletedTask;
+    }
+
+    public Task OnStopAsync()
+    {
+        return Task.CompletedTask;
+    }
+
+}
 ```
 
-## Delegate Commands
-
-You can also add single commands without the need of handlers.
-Those commands are restricted to the `IPlayer player, string[] arguments` signature and do not support type parsing.
-
-### Command Registration
-
-Delegate commands can be registered by calling the following method:
-
-```cs
-MP.Commands.Register(TestCommand);
-```
-
-## Command Signature
+#### Signature
 
 The first parameter of a command must always be `IPlayer`, the player that issued the command. From there commands within a command handler class support the following parameter types:
 
@@ -41,7 +44,7 @@ Alternatively you can also use the `IPlayer player, string[] arguments` signatur
 
 Since all commands will be executed asynchronously, the return type must be `Task`. 
 
-## Example Commands
+#### Example
 
 Let's define a simple command for creating a vehicle within a command handler:
 
@@ -63,6 +66,44 @@ public class CommandHandler : ICommandHandler
 This command could be called by typing `/vehicle T20` into the ingame chat.
 
 More example commands can be found in the example resource.
+
+## Delegate Commands
+
+Delegate commands are an alternative way to add or register commands without the need of a command handler. The only downside of this way to register commands is, that you are unable to make use of our integrated type-parser.
+
+#### Registration
+
+```cs
+public class Main implements IResource {
+
+    public Main() 
+    {
+        // Register command with class method
+        MP.Commands.Register("test1", ExampleCommand);
+
+        // Register command with lambda method
+        MP.Commands.Register("test", async (player, arguments) => {
+            await player.OutputChatBoxAsync("Command with lambda successful!");
+        });
+    }
+
+    private async Task ExampleCommand(IPlayer player, string[] arguments) 
+    {
+        await player.OutputChatBoxAsync("Command with method successful!");
+    }
+
+    public Task OnStartAsync()
+    {
+        return Task.CompletedTask;
+    }
+
+    public Task OnStopAsync()
+    {
+        return Task.CompletedTask;
+    }
+
+}
+```
 
 ## Error Handling
 
